@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+  font-family: "opensans", "Arial", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h2 {
+  font-family: "opensanslight", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  color: #283645;
+}
+h3 {
+  font-size: 18px;
+  font-family: "opensansbold", sans-serif;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  color: #283645;
+}
+a {
+  font-family: "opensansbold", sans-serif;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+@media (min-width: 960px) {
+  .wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
