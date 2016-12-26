@@ -2,20 +2,109 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
-  <header class="page-header">
-  </header>
-  <main class="page-main">
-  </main>
-  <footer class="page-footer">
-  </footer>
+    <header class="page-header">
+        <div class="page-header__left">
+            <nav class="page-header__menu">
+                <ul>
+                    <li><a href="#">Каталог товаров</a></li>
+                    <li><a href="#">Вязание на заказ</a></li>
+                </ul>
+                <a href="#">Новые поступления</a>
+                <a href="#">Распродажа</a>
+            </nav>
+            <div class="page-header__header-logo">
+                <a href="#">
+                    <img class="header-logo" src="#" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="page-header__right">
+            <button class="icon-zoom"></button>
+            <div class="page-header__busket">
+                <button class="busket">Корзина: пока пуста</button>
+            </div>
+            <p>Бесплатная доставка по России</p>
+        </div>
+    </header>
+    <main>
+        <div class="main-header">
+            <h2>Вязание на заказ</h2>
+        </div>
+        <form>
+            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <fieldset class="form-type">
+                <legend>Тип</legend>
+                <input type="radio" id="accessuary" checked>
+                <labeL for="accessuary">Аксессуар для интерьера</label>
+                <input type="radio" id="accessuary">
+                <labeL for="accessuary">Детская игрушка</label>
+            </fieldset>
+            <fieldset class="form-color">
+                <legend>Цвет</legend>
+                <input type="checkbox" id="white" checked>
+                <labeL for="white">Белый</label>
+                <input type="checkbox" id="gray" checked>
+                <labeL for="gray">Серый</label>
+                <input type="checkbox" id="tifani">
+                <labeL for="tifani">«Тиффани»</label>
+                <input type="checkbox" id="black">
+                <labeL for="black">Черный</label>
+                <input type="checkbox" id="pink">
+                <labeL for="pink">Розовый</label>
+                <input type="checkbox" id="orange">
+                <labeL for="orange">Оранжевый</label>
+            </fieldset>
+            <fieldset class="form-identify">
+                <legend>ФИО</legend>
+                <input type="text" id="name" placeholder="Введите ваше имя*">
+                <labeL for="name">Имя</label>
+                <input type="text" id="surname" placeholder="Укажите фамилию*">
+                <labeL for="surname">Фамилия</label>
+                <input type="text" id="middle-name" placeholder="Отчество, если желаете">
+                <labeL for="middle-name">Отчество</label>
+            </fieldset>
+            <fieldset class="form-tel">
+                <legend>ТЕЛ</legend>
+                <input type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ**">
+            </fieldset>
+            <fieldset class="form-email">
+                <legend>E-mail</legend>
+                <input type="email" id="email" placeholder="Ваш Email*">
+            </fieldset>
+            <fieldset class="form-email">
+                <legend>E-mail</legend>
+                <textarea placeholder="Опишите все ваши пожелания к заказу">
+                </textarea>
+            </fieldset>
+            <div class="form-btn">
+                <button class="btn btn-order">ОТПРАВИТЬ ЗАКАЗ</button>
+                <p>*Поля обязательны для заполнения</p>
+            </div>
+        </form>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__footer-logo">
+        </div>
+        <div class="page-footer__social-btn">
+            <a class="instagram" href="#"><img src="#" alt=""></a>
+            <a class="facebook" href="#"><img src="#" alt=""></a>
+            <a class="twitter" href="#"><img src="#" alt=""></a>
+        </div>
+        <div class="page-footer__footer-copyright">
+            <a href="#">
+                <p>Разработано</p>
+                <img src="#" alt="logo htmlacademy">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
