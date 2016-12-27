@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 h1 {
@@ -68,6 +68,14 @@ button {
   margin: 0 auto;
   padding: 0 30px;
 }
+.mobile-header-logo {
+  width: 86px;
+  height: 35px;
+}
+.tablet-header-logo,
+.desktop-header-logo {
+  display: none;
+}
 .about-us-items {
   text-align: left;
 }
@@ -86,7 +94,11 @@ button {
       flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   color: white;
+  padding: 30px;
+  text-align: left;
 }
 .menu-items__item--light {
   background: #63d1bb;
@@ -98,10 +110,24 @@ button {
   display: block;
   color: #ffffff;
 }
-.menu-item-picture {
+.icon-lamp,
+.icon-toy {
   display: block;
   fill: #149080;
   opacity: 0.5;
+}
+.icon-lamp {
+  width: 40px;
+  height: 62px;
+}
+.icon-toy {
+  width: 60px;
+  height: 60px;
+}
+.promo {
+  min-height: 435px;
+  text-align: center;
+  background: #ffffff url("../img/hero-mobile@1x.jpg") no-repeat center bottom;
 }
 .item-sale {
   color: #63d1bb;
@@ -109,10 +135,96 @@ button {
   font-size: 17px;
   line-height: 16px;
 }
+.btn {
+  min-width: 259px;
+  min-height: 52px;
+  color: #444444;
+  background: #ffffff;
+  border: 2px solid #444444;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}
 @media (min-width: 768px) {
   .wrapper {
     width: 100%;
     padding: 0 50px;
+  }
+  .contacts__main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contacts__email,
+  .contacts__adress {
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .about-us-items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .about-us-items__item {
+    width: 50%;
+  }
+  .menu-items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .menu-items__item {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 50%;
+  }
+  .menu-items__item--light,
+  .menu-items__item--dark {
+    width: 50%;
+  }
+  .page-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .week-sale {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .week-sale__header {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .week-sale__about,
+  .week-sale__picture {
+    width: 50%;
   }
 }
 @media (min-width: 1150px) {

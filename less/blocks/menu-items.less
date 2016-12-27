@@ -3,7 +3,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: white;
+  padding: 30px;
+  text-align: left;
 }
 
 .menu-items__item--light{
@@ -19,8 +22,38 @@
   color: @color-white;
 }
 
-.menu-item-picture {
+.icon-lamp,
+.icon-toy {
   display: block;
   fill: #149080;
   opacity: 0.5;
+}
+
+.icon-lamp{
+  width: 40px;
+  height: 62px;
+}
+
+.icon-toy {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 768px){
+  .menu-items{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-items__item{
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 50%;
+  }
+
+  .menu-items__item--light,
+  .menu-items__item--dark{
+    width: 50%;
+  }
 }
