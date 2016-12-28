@@ -86,11 +86,12 @@ button {
   position: relative;
   -ms-flex-order: 1;
       order: 1;
+  left: 10px;
 }
 .page-header__menu-navigation {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
 }
 .main-nav__1 {
   -ms-flex-order: 2;
@@ -110,7 +111,7 @@ button {
   height: 78px;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
-  padding: 32px 0;
+  padding: 20px 0;
   font-size: 17px;
   line-height: 24px;
 }
@@ -132,24 +133,67 @@ button {
 .delivery {
   display: none;
 }
+.contacts {
+  margin: 0 -40px;
+}
 .about-us-items {
   text-align: left;
+  padding: 0 0 55px;
+}
+.about-us-items h2 {
+  margin-bottom: 30px;
 }
 .about-us-items__item {
   fill: #63d1bb;
+  margin-bottom: 35px;
+}
+.about-us-items__item:last-child {
+  margin-bottom: 0;
+}
+.about-us-icon {
+  margin: 0 0 15px 10px;
 }
 .about-us-items__item p {
   font-size: 17px;
   font-weight: bold;
+  line-height: 20px;
+}
+.icon-price {
+  position: relative;
+  left: -10px;
+  top: -5px;
+}
+.icon-round {
+  position: relative;
+  left: -5px;
+  top: 0px;
+}
+.icon-rocket {
+  position: relative;
+  left: -15px;
+  top: -5px;
+}
+.icon-present {
+  position: relative;
+  left: -7px;
+  top: 0px;
+}
+.page-footer {
+  margin: 0 -40px;
 }
 .promo {
   min-height: 568px;
-  padding-top: 150px;
+  padding-top: 135px;
+  margin: 0 -40px;
   background: #ffffff url("../img/hero-mobile@1x.jpg") no-repeat center bottom;
+  background-position-y: 60px;
+}
+.promo-header {
+  padding: 0 30px;
 }
 .menu-items {
   position: relative;
-  bottom: -120px;
+  bottom: -100px;
 }
 .menu-items__item {
   width: 100%;
@@ -162,8 +206,12 @@ button {
   -ms-flex-align: center;
       align-items: center;
   color: white;
-  padding: 30px;
+  padding: 20px 40px;
   text-align: left;
+}
+.menu-items__item h3 {
+  font-size: 19px;
+  line-height: 24px;
 }
 .menu-items__item--light {
   background: #63d1bb;
@@ -190,18 +238,74 @@ button {
   width: 60px;
   height: 60px;
 }
+.reviews {
+  text-align: left;
+}
+.reviews h2 {
+  margin-bottom: 25px;
+}
+.reviews p {
+  margin-bottom: 55px;
+}
+.reviews b {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: bold;
+}
+.review-navigation__slider {
+  padding: 35px 0 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.review-navigation__slider-left,
+.review-navigation__slider-right {
+  width: 50%;
+  padding: 10px 35px;
+  border: 1px solid #444444;
+}
+.week-sale {
+  position: relative;
+  padding: 30px 0 70px;
+  text-align: left;
+}
 .item-sale {
   color: #63d1bb;
   font-weight: bold;
   font-size: 17px;
   line-height: 16px;
+  margin: 5px 0 20px;
+}
+.week-sale__about {
+  padding: 0 15px 0 0;
+}
+.week-sale__about p {
+  line-height: 25px;
 }
 table {
+  margin-top: 10px;
   border-collapse: collapse;
 }
 td {
+  min-width: 100px;
+  padding: 20px 0 0;
   text-align: left;
   border-bottom: 1px solid #444;
+}
+.price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #444444;
+  margin-top: 380px;
+  text-align: center;
+}
+.week-sale__picture {
+  position: absolute;
+  top: 345px;
 }
 .btn {
   min-width: 259px;
@@ -213,6 +317,9 @@ td {
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
+}
+.btn-order {
+  margin-top: 25px;
 }
 @media (min-width: 700px) {
   .promo {
