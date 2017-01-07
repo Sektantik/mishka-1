@@ -1,22 +1,15 @@
-//body
-
-html {
-  box-sizing: border-box;
-  padding: 0;
-}
-
 *,
 *:after,
 *:before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
   overflow-x: hidden;
   font-family: "opensans", "Arial", sans-serif;
   margin: 0 auto;
-  text-align: center;
 }
 
 img {
@@ -75,17 +68,17 @@ button {
   cursor: pointer;
 }
 
-.clearfix::after {
-  display: table;
-  clear: both;
-  content: "";
-}
-
 .wrapper {
   width: 100%;
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 @media (min-width: 768px) {
