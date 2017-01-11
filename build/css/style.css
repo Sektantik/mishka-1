@@ -228,9 +228,83 @@ button {
   left: -7px;
   top: 0px;
 }
+form {
+  margin: 0 -10px;
+}
+fieldset {
+  border: none;
+}
+legend {
+  font-family: "opensansbold", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+label {
+  display: block;
+  position: relative;
+  font-family: "opensansbold", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #010000;
+  margin: 0 0 50px 65px;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+  cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -65px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #444444;
+}
+.icon-tick {
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -56px;
+  width: 23px;
+  height: 16px;
+  fill: #010000;
+}
+input[type="radio"] + label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -65px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #444444;
+}
+input[type="radio"] + label::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -53px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #63d1bb;
+}
 .main-header {
-  padding: 40px 80px;
+  margin: 0 -30px;
+  padding: 40px 5px;
   background: #ececec;
+  text-align: center;
 }
 .page-footer {
   margin: 0 -40px;
